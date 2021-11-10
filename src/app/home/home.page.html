@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Ionic Greetings
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input type="text" [(ngModel)]="personName"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="showGreetings()" expand="block" shape="round" color="danger">
+    Show Greetings
+  </ion-button>
+
+</ion-content>
